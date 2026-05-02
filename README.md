@@ -3,8 +3,8 @@
 Pi extension for GPT image generation using Pi's existing ChatGPT/Codex subscription login.
 
 <p align="center">
-  <img src="assets/initial.png" alt="Generated initial image" width="360" />
-  <img src="assets/after.png" alt="Generated follow-up image" width="360" />
+  <img src="https://raw.githubusercontent.com/georgetsouvaltzis/pi-gpt-image/main/assets/initial.png" alt="Generated initial image" width="360" />
+  <img src="https://raw.githubusercontent.com/georgetsouvaltzis/pi-gpt-image/main/assets/after.png" alt="Generated follow-up image" width="360" />
 </p>
 
 ## What it does
@@ -71,7 +71,7 @@ create a square icon of a red circle on white using gpt-image
 ```
 
 <p align="center">
-  <img src="assets/initial.png" alt="Generated initial image" width="520" />
+  <img src="https://raw.githubusercontent.com/georgetsouvaltzis/pi-gpt-image/main/assets/initial.png" alt="Generated initial image" width="520" />
 </p>
 
 Then ask for a follow-up generation:
@@ -81,7 +81,7 @@ add Hello World text on top of it
 ```
 
 <p align="center">
-  <img src="assets/after.png" alt="Generated follow-up image" width="520" />
+  <img src="https://raw.githubusercontent.com/georgetsouvaltzis/pi-gpt-image/main/assets/after.png" alt="Generated follow-up image" width="520" />
 </p>
 
 Or direct tool request:
@@ -104,7 +104,7 @@ Browse current-session saved images in a TUI carousel:
 
 Keys: `←`/`→` or `h`/`l` switch images, `q`/`esc` closes.
 
-<video src="assets/carousel.mp4" autoplay muted loop playsinline controls width="720">
+<video src="https://raw.githubusercontent.com/georgetsouvaltzis/pi-gpt-image/main/assets/carousel.mp4" autoplay muted loop playsinline controls width="720">
   Carousel demo: https://github.com/georgetsouvaltzis/pi-gpt-image/blob/main/assets/carousel.mp4
 </video>
 
