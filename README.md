@@ -25,24 +25,18 @@ Capabilities:
 - Fail fast before generation if a custom output directory is invalid.
 - Record parent/child artifact relationships for follow-up prompts.
 
-Non-goals:
-
-- No browser automation or ChatGPT web scraping.
-- No OpenAI Platform Images API.
-- No true pixel-level image editing yet; `parentId` records relationships, but previous image bytes are not sent automatically.
-
 ## Install
 
 Global install:
 
 ```bash
-pi install npm:pi-gpt-image
+pi install npm:@georgetsouvaltzis/pi-gpt-image
 ```
 
 Project install:
 
 ```bash
-pi install -l npm:pi-gpt-image
+pi install -l npm:@georgetsouvaltzis/pi-gpt-image
 ```
 
 ## Setup
@@ -171,7 +165,7 @@ Or create `~/.pi/agent/gpt-image/config.json` globally.
 
 Project config overrides global config. Tool-call parameters override config defaults.
 
-Configurable generation defaults:
+Example config:
 
 ```json
 {
@@ -181,8 +175,6 @@ Configurable generation defaults:
   "outputFormat": "png"
 }
 ```
-
-See `config.example.json`.
 
 ## Notes
 
