@@ -104,9 +104,9 @@ Browse current-session saved images in a TUI carousel:
 
 Keys: `←`/`→` or `h`/`l` switch images, `q`/`esc` closes.
 
-<p align="center">
-  <video src="assets/carousel.mov" autoplay muted loop playsinline controls width="720"></video>
-</p>
+<video src="assets/carousel.mp4" autoplay muted loop playsinline controls width="720">
+  Carousel demo: https://github.com/georgetsouvaltzis/pi-gpt-image/blob/main/assets/carousel.mp4
+</video>
 
 Show project config plus allowed values:
 
