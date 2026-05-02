@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/georgetsouvaltzis/pi-gpt-image#readme",
   "keywords": ["pi-package", "pi-extension", "gpt-image", "chatgpt", "image-generation"],
-  "files": ["index.ts", "README.md", "LICENSE", "config.example.json"],
+  "files": ["index.ts", "README.md", "LICENSE", "config.example.json", "assets"],
   "peerDependencies": {
     "@mariozechner/pi-coding-agent": "*",
     "@mariozechner/pi-tui": "*",

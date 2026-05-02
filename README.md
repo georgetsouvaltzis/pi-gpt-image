@@ -2,6 +2,11 @@
 
 Pi extension for GPT image generation using Pi's existing ChatGPT/Codex subscription login.
 
+<p align="center">
+  <img src="assets/example-red-circle.png" alt="Generated red circle icon" width="240" />
+  <img src="assets/example-hello-world.png" alt="Generated red circle icon with Hello World text" width="240" />
+</p>
+
 ## Intent
 
 - Uses `/login` credentials for `openai-codex`.
@@ -47,8 +52,22 @@ Then:
 Ask normally:
 
 ```text
-create a square image of a tiny robot painting the pi logo
+create a square icon of a red circle on white using gpt-image
 ```
+
+<p align="center">
+  <img src="assets/example-red-circle.png" alt="Generated red circle icon" width="320" />
+</p>
+
+Then ask for another generated variation or follow-up prompt:
+
+```text
+add Hello World text on top of it
+```
+
+<p align="center">
+  <img src="assets/example-hello-world.png" alt="Generated red circle icon with Hello World text" width="320" />
+</p>
 
 Or direct tool request:
 
