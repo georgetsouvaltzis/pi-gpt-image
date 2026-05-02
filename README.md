@@ -13,7 +13,7 @@ Pi extension for GPT image generation using Pi's existing ChatGPT/Codex subscrip
 
 Capabilities:
 
-- Generate images from normal chat prompts, e.g. “create a square icon of a red circle on white”.
+- Generate images from normal chat prompts, e.g. “Create an image of an astronaut, staring at Mars from the Moon”.
 - Use Pi's `/login` credentials for `openai-codex`; no separate API key setup.
 - Avoid OpenAI Platform billing; this does **not** use `OPENAI_API_KEY`.
 - Save generated image files automatically under a session-local folder.
@@ -67,7 +67,7 @@ Then:
 Ask normally:
 
 ```text
-create a square icon of a red circle on white using gpt-image
+Create an image of an astronaut, staring at Mars from the Moon
 ```
 
 <p align="center">
@@ -77,7 +77,7 @@ create a square icon of a red circle on white using gpt-image
 Then ask for a follow-up generation:
 
 ```text
-add Hello World text on top of it
+instead of Mars, make it Saturn
 ```
 
 <p align="center">
@@ -104,9 +104,7 @@ Browse current-session saved images in a TUI carousel:
 
 Keys: `←`/`→` or `h`/`l` switch images, `q`/`esc` closes.
 
-<video src="https://raw.githubusercontent.com/georgetsouvaltzis/pi-gpt-image/main/assets/carousel.mp4" autoplay muted loop playsinline controls width="720">
-  Carousel demo: https://github.com/georgetsouvaltzis/pi-gpt-image/blob/main/assets/carousel.mp4
-</video>
+[Watch the carousel demo](https://github.com/georgetsouvaltzis/pi-gpt-image/blob/main/assets/carousel.mp4)
 
 Show project config plus allowed values:
 
