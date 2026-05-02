@@ -1,0 +1,5 @@
+.DS_Store
+.pi/
+*.tgz
+node_modules/
+npm-debug.log*
