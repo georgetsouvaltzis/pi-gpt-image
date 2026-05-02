@@ -3,18 +3,33 @@
 Pi extension for GPT image generation using Pi's existing ChatGPT/Codex subscription login.
 
 <p align="center">
-  <img src="assets/example-red-circle.png" alt="Generated red circle icon" width="240" />
-  <img src="assets/example-hello-world.png" alt="Generated red circle icon with Hello World text" width="240" />
+  <img src="assets/initial-image.png" alt="Generated red circle icon" width="360" />
+  <img src="assets/altered-image.png" alt="Generated follow-up image with Hello World text" width="360" />
 </p>
 
-## Intent
+## What it does
 
-- Uses `/login` credentials for `openai-codex`.
-- Talks directly to the ChatGPT/Codex subscription backend used by pi.
-- Uses the backend `image_generation` tool.
-- Does **not** use `OPENAI_API_KEY`.
-- Does **not** use OpenAI Platform billing.
-- Does **not** use browser/web automation.
+`gpt-image` lets you generate images directly inside Pi using your existing ChatGPT Plus/Pro Codex login. It adds a natural-language image tool, saves each result to disk, keeps session-local metadata, and provides both a text list and a terminal carousel for browsing generated images.
+
+Capabilities:
+
+- Generate images from normal chat prompts, e.g. “create a square icon of a red circle on white”.
+- Use Pi's `/login` credentials for `openai-codex`; no separate API key setup.
+- Avoid OpenAI Platform billing; this does **not** use `OPENAI_API_KEY`.
+- Save generated image files automatically under a session-local folder.
+- Persist metadata in `<outputDir>/<session-id>/manifest.json`.
+- List generated artifacts with `/gpt-image list`.
+- Browse saved images visually with `/gpt-image list carousel`.
+- Configure defaults for `size`, `quality`, `outputFormat`, and `outputDir`.
+- Use project-local output by default: `.pi/gpt-image/<session-id>/`.
+- Fail fast before generation if a custom output directory is invalid.
+- Record parent/child artifact relationships for follow-up prompts.
+
+Non-goals:
+
+- No browser automation or ChatGPT web scraping.
+- No OpenAI Platform Images API.
+- No true pixel-level image editing yet; `parentId` records relationships, but previous image bytes are not sent automatically.
 
 ## Install
 
@@ -56,17 +71,17 @@ create a square icon of a red circle on white using gpt-image
 ```
 
 <p align="center">
-  <img src="assets/example-red-circle.png" alt="Generated red circle icon" width="320" />
+  <img src="assets/initial-image.png" alt="Generated red circle icon" width="520" />
 </p>
 
-Then ask for another generated variation or follow-up prompt:
+Then ask for a follow-up generation:
 
 ```text
 add Hello World text on top of it
 ```
 
 <p align="center">
-  <img src="assets/example-hello-world.png" alt="Generated red circle icon with Hello World text" width="320" />
+  <img src="assets/altered-image.png" alt="Generated follow-up image with Hello World text" width="520" />
 </p>
 
 Or direct tool request:
@@ -88,6 +103,10 @@ Browse current-session saved images in a TUI carousel:
 ```
 
 Keys: `←`/`→` or `h`/`l` switch images, `q`/`esc` closes.
+
+[Watch the carousel demo](assets/carousel.mov)
+
+<video src="assets/carousel.mov" controls width="720"></video>
 
 Show project config plus allowed values:
 
