@@ -3,8 +3,8 @@
 Pi extension for GPT image generation using Pi's existing ChatGPT/Codex subscription login.
 
 <p align="center">
-  <img src="assets/initial-image.png" alt="Generated red circle icon" width="360" />
-  <img src="assets/altered-image.png" alt="Generated follow-up image with Hello World text" width="360" />
+  <img src="assets/initial.png" alt="Generated initial image" width="360" />
+  <img src="assets/after.png" alt="Generated follow-up image" width="360" />
 </p>
 
 ## What it does
@@ -71,7 +71,7 @@ create a square icon of a red circle on white using gpt-image
 ```
 
 <p align="center">
-  <img src="assets/initial-image.png" alt="Generated red circle icon" width="520" />
+  <img src="assets/initial.png" alt="Generated initial image" width="520" />
 </p>
 
 Then ask for a follow-up generation:
@@ -81,7 +81,7 @@ add Hello World text on top of it
 ```
 
 <p align="center">
-  <img src="assets/altered-image.png" alt="Generated follow-up image with Hello World text" width="520" />
+  <img src="assets/after.png" alt="Generated follow-up image" width="520" />
 </p>
 
 Or direct tool request:
@@ -104,9 +104,9 @@ Browse current-session saved images in a TUI carousel:
 
 Keys: `←`/`→` or `h`/`l` switch images, `q`/`esc` closes.
 
-[Watch the carousel demo](assets/carousel.mov)
-
-<video src="assets/carousel.mov" controls width="720"></video>
+<p align="center">
+  <video src="assets/carousel.mov" autoplay muted loop playsinline controls width="720"></video>
+</p>
 
 Show project config plus allowed values:
 
